@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: true,
+  production: false,
   OPENAI_API_KEY: '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',
 };
 
@@ -14,4 +14,4 @@ export const environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+ import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
