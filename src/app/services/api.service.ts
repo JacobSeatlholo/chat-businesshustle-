@@ -8,7 +8,7 @@ const configuration = new Configuration({
   apiKey: environment.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
-
+  
 enum Creator {
   Me = 0,
   Bot = 1,
