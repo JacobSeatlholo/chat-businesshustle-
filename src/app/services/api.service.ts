@@ -27,7 +27,7 @@ export class ApiService {
     {
       text: 'What is Business Hustle AI Bot?',
       from: Creator.Me,
-    },
+    }, 
     {
       text: 'I am a business AI chatbot built by Business Hustle. I can handle repetitive tasks and improve customer service. I use the OpenAI GPT-3 model for accurate and efficient responses and I am designed to reduce the workload for human employees and improve efficiency. ',
       from: Creator.Bot,
