@@ -25,17 +25,17 @@ interface Message {
 export class ApiService {
   dummyMessages = [
     {
-      text: 'What is Javascript?',
+      text: 'What is Business Hustle AI Bot?',
       from: Creator.Me,
     },
     {
-      text: 'Javascript is a scripting language that is used to create interactive webpages and applications. It is an object-oriented programming language that can be used to create dynamic, responsive webpages and applications. It can be used to create games, 3D graphics, and even artificial intelligence within the browser.',
+      text: 'I am a business AI chatbot built by Business Hustle. I can handle repetitive tasks and improve customer service. I use the OpenAI GPT-3 model for accurate and efficient responses and I am designed to reduce the workload for human employees and improve efficiency. ',
       from: Creator.Bot,
     },
   ];
   private messages = new BehaviorSubject<Message[]>(this.dummyMessages);
 
-  constructor(public http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   async getCompletion(prompt: string) {
     const newMessage = {
