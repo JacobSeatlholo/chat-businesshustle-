@@ -35,7 +35,7 @@ export class ApiService {
   ];
   private messages = new BehaviorSubject<Message[]>(this.dummyMessages);
 
-  constructor(private http: HttpClient) {}
+  constructor(public http: HttpClient) {}
 
   async getCompletion(prompt: string) {
     const newMessage = {
